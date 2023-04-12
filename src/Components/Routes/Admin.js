@@ -10,7 +10,7 @@ function Admin() {
 
     useEffect(() => {
         const checkAuth = async () => {
-            let res = await axios.get("/admin-auth")
+            let res = await axios.get("/api/v1/auth/admin-auth")
             if (res.data.Ok) {
                 setOk(true)
             } else {
